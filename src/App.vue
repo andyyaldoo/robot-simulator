@@ -96,12 +96,24 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+  * {
+    box-sizing: border-box;
+  }
+
+  %container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+
+  html, body {
+    @extend %container;
+  }
+
+  #app {
+    @extend %container;
+    padding: 1em;
+  }
 </style>
