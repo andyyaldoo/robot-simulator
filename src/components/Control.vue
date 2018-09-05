@@ -34,12 +34,6 @@ import Vue from 'vue';
 import Direction from '../enum';
 export default Vue.extend({
     name: 'controls',
-    // props: {
-    //     directions: {
-    //         type: String,
-    //         default: null,
-    //     },
-    // },
     data() {
        return {
            x: 0,
