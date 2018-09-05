@@ -13,7 +13,6 @@
       v-on:right="right"
       v-on:report="report"
     />
-    <!-- <h2>{{rep}}</h2> -->
   </div>
 </template>
 
